@@ -2,29 +2,25 @@
 public class Q3 {
 
   public static void main(String[] args) {
-    // TODO Auto-generated method stub
-    myNumber int1 = new myIntA(4);
-    System.out.println(int1);
+    myIntA num1 = new myIntA(4);
+    System.out.println(num1);
+    
+    myIntB num2 = new myIntB(4);
+    System.out.println(num2);
+    
+    myNumber num3 = new myIntA(4);
+    System.out.println(num3);
+
+    myNumber num4 = new myIntB(4);
+    System.out.println(num4);
+
+    /*
+     * Causes a compile error
+     * myNumber num5 = new myNumber(4);
+    System.out.println(num5);*/
   }
 
 }
 
-abstract class myNumber{
-  double value;
-  public String toString(){
-      return "Double: " + value;
-  }
-}
-class myIntA extends myNumber{
-  myIntA(int inVal){
-      value = (double) inVal;
-  }
-  public String toString(){
-      return "Int: " + (int)value;
-  }
-}
-class myIntB extends myNumber{
-  myIntB(int inVal){
-     value = (double) inVal;
-  }
-}
+
+
